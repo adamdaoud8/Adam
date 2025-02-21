@@ -2,7 +2,6 @@ package Inlämning;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 // Logikklass för Morse-kod konvertering
 
