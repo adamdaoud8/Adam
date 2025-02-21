@@ -17,13 +17,13 @@ public class MorseMain {
         if (choice == 1) {
             System.out.println("Skriv text att konvertera till Morse:");
             String text = scanner.nextLine();
-            System.out.println("Morse-kod: " + converter.toMorse(text));
+            System.out.println("Morse-kod: " + ConverterLogik.toMorse(text));
 
 
         } else if (choice == 2) {
             System.out.println("Skriv Morse-kod att konvertera till text (använd mellanslag mellan bokstäver och '|' mellan ord)");
             String morse = scanner.nextLine();
-            System.out.println("Text: " + converter.fromMorse(morse));
+            System.out.println("Text: " + ConverterLogik.fromMorse(morse));
 
         } else {
             System.out.println("Ogiltigt val");

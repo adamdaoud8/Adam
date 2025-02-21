@@ -29,7 +29,7 @@ import java.util.Scanner;
             }
         }
 
-        public String toMorse(String text) {
+        public static String toMorse(String text) {
             StringBuilder morse = new StringBuilder();
             text = text.toUpperCase();
 
@@ -41,7 +41,7 @@ import java.util.Scanner;
             return morse.toString().trim();
         }
 
-        public String fromMorse(String morse) {
+        public static String fromMorse(String morse) {
             StringBuilder text = new StringBuilder();
             String[] words = morse.split(" ");
 
