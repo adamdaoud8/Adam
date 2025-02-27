@@ -3,12 +3,13 @@ package Inlämning;
 import java.util.HashMap;
 import java.util.Map;
 
+
 // Logikklass för Morse-kod konvertering
 
     public class ConverterLogik {
 
-        private static final Map<Character, String> textToMorse = new HashMap<>();
-        private static final Map<String, Character> morseToText = new HashMap<>();
+        private static final Map<String, Character> textToMorse = new HashMap<>();
+        private static final Map<Character, String> morseToText = new HashMap<>();
 
         {
             String[][] morseArray = {
@@ -23,8 +24,8 @@ import java.util.Map;
             };
 
             for (String[] pair : morseArray) {
-                textToMorse.put(pair[0].charAt(0), pair[1]);
-                morseToText.put(pair[1], pair[0].charAt(0));
+                textToMorse.put(pair[0],pair[1].charAt(1));
+                morseToText.put(pair[1].charAt(0), pair[1]);
             }
         }
 
