@@ -11,7 +11,7 @@ import java.util.Map;
         private static final Map<String, Character> textToMorse = new HashMap<>();
         private static final Map<Character, String> morseToText = new HashMap<>();
 
-        {
+        static {
             String[][] morseArray = {
                     {"A", ".-"}, {"B", "-..."}, {"C", "-.-."}, {"D", "-.."},
                     {"E", "."}, {"F", "..-."}, {"G", "--."}, {"H", "...."},
@@ -25,7 +25,7 @@ import java.util.Map;
 
             for (String[] pair : morseArray) {
                 textToMorse.put(pair[0],pair[1].charAt(1));
-                morseToText.put(pair[1].charAt(0), pair[1]);
+                morseToText.put(pair[1].charAt(0), pair[0]);
             }
         }
 
